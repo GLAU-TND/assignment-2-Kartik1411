@@ -51,21 +51,20 @@ public class Methods
     }
 
 
-    public void verify_A(TreeNode root) {
-
+    public void verify_A(TreeNode root)
+    {
         preOrder(root);
         System.out.println("First element of pre Order traversal : " + pre.getFront().getNode().getData());
         postOrder(root);
         System.out.println("Last Element of post order traversal : " + post.getEnd().getNode().getData());
-
     }
 
 
     // verification of statement "Both the traversal will give
     // same element at the mid position for odd number of nodes."
+
     public boolean verify_B(TreeNode root)
     {
-
         pre.queuePrint(pre);
         post.queuePrint(post);
         int size = pre.getSize(pre);
@@ -122,7 +121,8 @@ public class Methods
 
     //pre-order
 
-    public void preOrder(TreeNode node) {
+    public void preOrder(TreeNode node)
+    {
         if (node == null)
         {
             return;
@@ -134,9 +134,10 @@ public class Methods
     }
 
     //post-order
+
     public void postOrder(TreeNode node)
     {
-        if(node==null)
+        if (node == null)
         {
             return;
         }
@@ -144,7 +145,5 @@ public class Methods
         postOrder(node.getLeft());
         postOrder(node.getRight());
         post.enqueue(new Node(node));
-
-
     }
 }
