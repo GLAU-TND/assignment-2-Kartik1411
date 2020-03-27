@@ -112,18 +112,21 @@ public class MyBinarySearchTree
         try {
             if (newNode.getData() <= tempRoot.getData())
             {
-                System.out.println("left traversal...");
+                System.out.println("left traversal : ");
                 if (tempRoot.getLeft() == null)
                 {
                     tempRoot.setLeft(newNode);
-                    System.out.println("node inserted left");
-                    pre.enqueue(new Node(newNode));//only left insertion
+                    System.out.println("Node inserted at left");
+
+                    //only left insertion
+
+                    pre.enqueue(new Node(newNode));
                     newNode = null;
                     return;
                 }
                 else
                 {
-                    System.out.println("left not empty changing temp root ");
+                    System.out.println("Left not empty changing temp root ");
                     insert(tempRoot.getLeft());
                 }
             }
@@ -142,7 +145,7 @@ public class MyBinarySearchTree
                 }
                 else
                 {
-                    System.out.println("Right not empty changing tmproot");
+                    System.out.println("Right not empty changing temp root");
                     insert(tempRoot.getRight());
                 }
             }
@@ -171,7 +174,8 @@ public class MyBinarySearchTree
     }
 
     //pre-order
-    public void preOrder(TreeNode node) {
+    public void preOrder(TreeNode node)
+    {
         if (node == null)
         {
             return;
@@ -192,7 +196,5 @@ public class MyBinarySearchTree
         postOrder(node.getLeft());
         postOrder(node.getRight());
 
-
     }
-
 }
