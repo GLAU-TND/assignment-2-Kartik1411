@@ -169,6 +169,7 @@ public class MyBinarySearchTree
         countNotLeft(node.getRight());
 
     }
+
     //pre-order
     public void preOrder(TreeNode node) {
         if (node == null)
@@ -183,7 +184,7 @@ public class MyBinarySearchTree
     //post-order
     public void postOrder(TreeNode node)
     {
-        if(node==null)
+        if(node == null)
         {
             return;
         }
