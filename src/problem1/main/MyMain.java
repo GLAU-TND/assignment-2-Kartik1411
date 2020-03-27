@@ -13,7 +13,7 @@ public class MyMain
     public static void main(String[] args)
     {
             MyBinarySearchTree m = new MyBinarySearchTree();
-            MyQueue queue=new MyQueue();
+            MyQueue queue = new MyQueue();
             //setting root
             m.setRoot();
             System.out.println("root set : " + m.getRoot().getData());
