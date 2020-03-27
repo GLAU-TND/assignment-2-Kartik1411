@@ -158,14 +158,14 @@ public class MyBinarySearchTree
 
     public void countNotLeft(TreeNode node)
     {
-        if(node==null)
+        if(node == null)
         {
             return;
         }
 
         countNotLeft(node.getLeft());
 
-        if(node.getLeft()!=null)
+        if(node.getLeft() != null)
         {
             ++count;
         }
