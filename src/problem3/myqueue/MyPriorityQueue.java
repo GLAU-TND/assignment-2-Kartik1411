@@ -44,7 +44,7 @@ public class MyPriorityQueue
         do
             {
             System.out.println(i++);
-            System.out.print(front.getS().getName() + ":");
+            System.out.print(front.getS().getName() + " : ");
             System.out.println(front.getS().getRollNo());
             front = front.getNext();
         }
