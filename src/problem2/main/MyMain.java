@@ -12,7 +12,7 @@ public class MyMain
         //setting up the root
 
         m.setRoot();
-        System.out.println("Root set Successfully value :"+m.getRoot().getData());
+        System.out.println("Root set Successfully value : " + m.getRoot().getData());
 
 
         //Setting up the bst
