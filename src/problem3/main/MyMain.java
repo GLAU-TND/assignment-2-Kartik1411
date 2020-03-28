@@ -15,7 +15,7 @@ public class MyMain
 
         for (int i = 0; i < 4; i++)
         {
-            Node newNode=new Node();
+            Node newNode = new Node();
             m.enqueue(newNode);
         }
 
