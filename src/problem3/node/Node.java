@@ -22,8 +22,8 @@ public class Node
 
     public Node()
     {
-        s=new Student();
-        next=null;
+        s = new Student();
+        next = null;
     }
 
     public void setS(Student s)
